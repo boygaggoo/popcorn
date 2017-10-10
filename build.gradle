@@ -86,4 +86,7 @@ def renameOutputFiles(Project project, variant) {
         // 'unaligned' APK
         output.packageApplication.outputFile = new File(unalignedOutputFile.parent, outputFileName.replace(".apk", "-unaligned.apk"))
     }
+    plugins {
+    id "org.sonarqube" version "2.5"
+}
 }
